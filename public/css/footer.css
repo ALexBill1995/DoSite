@@ -1,0 +1,373 @@
+
+.site-footer {
+    padding: 60px 0 20px;
+    background-image: url("/images/footer_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: -1px;
+    position: relative;
+    z-index: 5;
+
+    font-family: 'Open Sans',sans-serif;
+    color: #fff;
+    font-size: 14px;
+}
+
+.site-footer a {
+    color: white;
+}
+
+.site-name a {
+    padding-bottom: 20px;
+}
+
+.site-footer .scroll-top {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 640px);
+    transform: translate(0,-50%) rotate(90deg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background-image: url("/images/scroll.svg");
+    transition: all 0.3s;
+    border-radius: 50%;
+    background-color: #F67280
+}
+
+.site-footer .scroll-top:hover {
+    transform: translate(0,-60%) rotate(90deg) scale(1.1)
+}
+
+.site-footer .block-footer-logo {
+    padding-left: 68px;
+    flex-shrink: 0
+}
+
+.site-footer .site-logo {
+    width: 62px;
+    height: 34px
+}
+
+.site-footer .site-name {
+    font-size: 17px
+}
+
+.site-footer .site-slogan {
+    font-size: 10px;
+    margin-top: -3px
+}
+
+.site-footer .site-footer__first,.site-footer .site-footer__second {
+    max-width: 1220px;
+    padding: 0 25px;
+    margin: 0 auto;
+    width: 100%
+}
+
+.site-footer .region-footer-top {
+    position: relative;
+    display: flex
+}
+
+.site-footer .field--name-field-phone {
+    white-space: nowrap
+}
+
+.site-footer .block-footer-contacts {
+    margin-left: 80px;
+    font-weight: 600;
+    min-width: 320px;
+}
+
+.site-footer .block-footer-contacts a {
+    position: relative
+}
+
+.site-footer .block-footer-contacts a::after {
+    content: '';
+    height: 1px;
+    background-color: #fff;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s;
+    position: absolute
+}
+
+.site-footer .block-footer-contacts a:hover::after {
+    width: 100%
+}
+
+.site-footer .block-footer-contacts .field--name-field-email {
+    font-weight: 400
+}
+
+.site-footer .block-footer-contacts .content {
+    display: flex;
+    align-items: center
+}
+
+.site-footer .block-footer-contacts .contacts_wrap {
+    margin-left: 50px
+}
+
+.site-footer .block-footer-address {
+    margin-left: 45px
+}
+
+.site-footer .block-footer-address .field--name-field-content p {
+    margin-bottom: 0;
+    color: white;
+    font-size: 14px;
+}
+
+.site-footer .block-footer-address span {
+    font-weight: 600
+}
+
+.site-footer .block-footer-address .content {
+    display: flex
+}
+
+.site-footer .block-footer-address .field--name-field-coord {
+    margin-left: 30px
+}
+
+.site-footer .block-footer-address .field--name-field-coord a {
+    padding-left: 30px;
+    position: relative
+}
+
+.site-footer .block-footer-address .field--name-field-coord a::after {
+    content: '';
+    height: 1px;
+    background-color: #fff;
+    width: 0;
+    bottom: 0;
+    left: 30px;
+    transition: all 0.3s;
+    position: absolute
+}
+
+.site-footer .block-footer-address .field--name-field-coord a:hover::after {
+    width: calc(100% - 30px)
+}
+
+.site-footer .block-footer-address .field--name-field-coord a::before {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/themes/personal/images/icons/coord.svg")
+}
+
+.site-footer .block-footer-appointment {
+    margin-top: 10px
+}
+
+.site-footer .block-footer-appointment .field--name-field-appointment {
+    max-width: 230px
+}
+
+.site-footer .block-footer-appointment .field--name-field-appointment a {
+    font-size: 12px
+}
+
+.site-footer .site-footer__bottom {
+    position: relative;
+    max-width: 1220px;
+    padding: 0 25px;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 20px
+}
+
+.site-footer .site-footer__bottom .field--name-field-info {
+    max-width: 306px;
+    color: #919699;
+    font-size: 12px
+}
+
+.site-footer .site-footer__bottom .region-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.site-footer .site-footer__bottom #gl_devel {
+    position: relative;
+    bottom: auto;
+    right: auto
+}
+
+.site-footer .site-footer__bottom .field--name-field-social {
+    display: flex
+}
+
+.site-footer .site-footer__bottom .field--name-field-social a img {
+    transition: all 0.3s
+}
+
+.site-footer .site-footer__bottom .field--name-field-social a:hover img {
+    transform: scale(1.1)
+}
+
+.site-footer .site-footer__bottom .field--name-field-social>.field__item+.field__item {
+    margin-left: 20px
+}
+
+@media screen and (max-width: 1300px) {
+    .site-footer .scroll-top {
+        left: 25px
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .site-footer {
+        padding-bottom: 70px
+    }
+
+    .site-footer .block-footer-appointment .field--name-field-appointment {
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .site-footer .region-footer-top {
+        flex-wrap: wrap
+    }
+
+    .site-footer .block-footer-contacts {
+        margin-left: auto;
+        width: 50%
+    }
+
+    .site-footer .block-footer-contacts .content {
+        justify-content: flex-end
+    }
+
+    .site-footer .block-footer-address {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 10px
+    }
+
+    .site-footer .block-footer-address .content {
+        justify-content: space-between;
+        align-items: center
+    }
+
+    .mobile-phones .field--name-field-phone>.field__item+.field__item {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .site-footer .custom-button {
+        margin: 30px 0;
+    }
+
+    .site-footer .site-footer__bottom .region-footer {
+        flex-direction: column
+    }
+
+    .site-footer .block-footer-address .content {
+        flex-direction: column;
+        text-align: center
+    }
+
+    .site-footer .block-footer-address .field--name-field-coord {
+        margin-left: 0;
+        margin-top: 10px
+    }
+
+    .site-footer .block-footer-contacts .content {
+        flex-direction: column;
+        text-align: right;
+        align-items: flex-end
+    }
+
+    .site-footer .block-footer-contacts .contacts_wrap {
+        flex-direction: column
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .site-footer .scroll-top {
+        width: 40px;
+        height: 40px;
+        background-size: 20px 20px
+    }
+
+    .site-footer .block-footer-contacts .field--name-field-phone {
+        display: none
+    }
+
+    .block-footer-logo {
+        margin-bottom: 0
+    }
+
+    .site-footer .block-footer-contacts {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px
+    }
+
+    .site-footer .block-footer-contacts .content {
+        align-items: center;
+        text-align: center
+    }
+
+    .site-footer .block-footer-contacts .contacts_wrap {
+        margin-left: 0
+    }
+
+    .site-footer .block-footer-logo {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap
+    }
+
+    .site-footer .region-footer-top {
+        position: static;
+        font-size: 12px
+    }
+
+    .site-footer .site-footer__bottom .field--name-field-info {
+        text-align: center
+    }
+
+    .site-footer .block-footer-address .field--name-field-coord a::before {
+        top: -3px
+    }
+}
+
+.custom-button {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 14px 19px;
+    background: #368BD2;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s;
+    border: none;
+    color: white;
+}
+
+.custom-button:hover {
+    background: #fff;
+    color: #368BD2;
+}
